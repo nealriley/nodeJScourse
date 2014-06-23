@@ -7,4 +7,5 @@
 
 var fs = require('fs');
 
+//STDIN >> Read in a chunk >> Write that chunk to File
 process.stdin.pipe(fs.createWriteStream("stdin.log"));
