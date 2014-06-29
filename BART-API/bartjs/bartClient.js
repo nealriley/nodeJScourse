@@ -1,5 +1,7 @@
 /*
  * BARTJS - Interact with BART API using NodeJS and Request
+ * Pings the following endpoint: http://api.bart.gov/api/etd.aspx?cmd=etd&orig=all&key=MW9S-E7SL-26DU-VV8V
+ *
  */
 
 var request = require("request");
