@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
+
   <head>
-    <title>Socket.IO chat</title>
+    <title>BART Chat</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { font: 13px Helvetica, Arial; }
@@ -15,23 +16,24 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
   </head>
+  
   <body>
-
     <ul id="messages"></ul>
     <form action="" id="formid">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
   </body>
+
   <script>
-  var socket = io();
-  $('#formid').submit(function(){
-    socket.emit('chat message', $('#m').val());
-    $('#m').val('');
-    return false;
-  });
-  socket.on('etd', function(etd){
-    $('#messages').append($('<li>').text(etd.message));
-  });
-</script>
+    var socket = io();
+    $('#formid').submit(function(){
+      socket.emit('chat message', $('#m').val());
+      $('#m').val('');
+      return false;
+    });
+    socket.on('etd', function(etd){
+      $('#messages').append($('<li>').text(etd.message));
+    });
+  </script>
 
 </html>
