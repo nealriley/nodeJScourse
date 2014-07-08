@@ -25,7 +25,7 @@
 
 //The callback will have all 5 values
  callbackMethod(function(err, args) {
-     console.log("Args: " + args);
+     console.log("Args " + args);
  })
 
  //The Event Method

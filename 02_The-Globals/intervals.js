@@ -11,7 +11,7 @@
 
 var repeatingFunction = setInterval(function() {
 	console.log("Ping");
-},1000); 
+},1000);
 
 //******************************************************************************//
 
@@ -20,7 +20,3 @@ var repeatingFunction = setInterval(function() {
  * setTimeout(callback, time) : delays the callback function for *time* ms
  * clearTimeout(timer) : stops a corresponding setTimeout callback
  */
-
-
-
-//******************************************************************************//

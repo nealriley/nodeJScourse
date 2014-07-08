@@ -1,6 +1,6 @@
 /*
  * Reading from Standard Input
- * Using the process librarie's stdin object,
+ * Using the process library's stdin object,
  * your node application can interact with
  * the command-line
  *
